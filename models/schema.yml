@@ -1,6 +1,13 @@
 
 version: 2
 
+sources:
+  - name: raw
+    schema: project-end-of-batch.musi_graph
+#    tables:
+#      - name:
+#        identifier: 
+
 models:
     - name: staging
       description: "A staging dbt model"
