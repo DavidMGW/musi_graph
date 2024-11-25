@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+    - name: staging
+      description: "A staging dbt model"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: intermediate
+      description: "An intermediate dbt model"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: mart
+      description: "A mart dbt model"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
