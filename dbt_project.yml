@@ -39,10 +39,10 @@ models:
   my_new_project:
     staging:
       +materialized: view
-      schema: staging
+      schema: 'staging'
     intermediate:
       +materialized: table
-      schema: intermediate
+      schema: 'intermediate'
     mart:
       +materialized: table
-      schema: mart
+      schema: 'mart'
