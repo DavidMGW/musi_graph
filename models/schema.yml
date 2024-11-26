@@ -3,35 +3,38 @@ version: 2
 
 sources:
   - name: raw
-    schema: project-end-of-batch.musi_graph
-#    tables:
-#      - name:
-#        identifier: 
+    schema: musi_graph
+    tables:
+      - name: spotify_albums
+        identifier: spotify_albums
+        description: A list of albums from Spotify's API
+        columns:
+          - name: album_id
+            description: Unique identifier for each row
+          - name: album_name
+            description: Name of the album
+          - name: release_date
+            description: Release date of the album
+          - name: total_tracks
+            description: Number of tracks
+          - name: album_type
+            description: Full-length album, single or compilation
+      - name: spotify_artists
+        identifier: spotify_artists
+        description: A list of artists from Spotify's API
+      - name: spotify_songs_features
+        identifier: spotify_songs_features
+        description: An extended table of features per song from Spotify's API
+      - name: spotify_user_behaviour_clean
+        identifier: spotify_user_behaviour_clean
+        description: User data from Spotify's API
 
-models:
-    - name: staging
-      description: "A staging dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
-
-    - name: intermediate
-      description: "An intermediate dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
-
-    - name: mart
-      description: "A mart dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+#models:
+#    - name: staging
+#      description: "A staging dbt model"
+#      columns:
+#          - name: id
+#            description: "The primary key for this table"
+#            tests:
+#                - unique
+#                - not_null
