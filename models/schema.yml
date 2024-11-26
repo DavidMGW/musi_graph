@@ -1,9 +1,8 @@
-
 version: 2
 
 sources:
   - name: raw
-    schema: musi_graph
+    schema: project-end-of-batch.musi_graph
     tables:
       - name: spotify_albums
         identifier: spotify_albums
@@ -28,6 +27,15 @@ sources:
       - name: spotify_user_behaviour_clean
         identifier: spotify_user_behaviour_clean
         description: User data from Spotify's API
+      - name: spotify_sleep_playlist
+        identifier: spotify_sleep_playlist
+        description: Songs from a particular playlist
+      - name: spotify_classic-hits
+        identifier: classic-hit
+        description: Classical music playlist
+      - name: ssd_songs
+        identifier: ssd_songs_with_audio_feature_clean
+        description: Moar data from Spotify's API
 
 #models:
 #    - name: staging
