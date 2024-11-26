@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: raw
-    schema: project-end-of-batch.musi_graph
+    schema: musi_graph
     tables:
       - name: spotify_albums
         identifier: spotify_albums
@@ -30,8 +30,8 @@ sources:
       - name: spotify_sleep_playlist
         identifier: spotify_sleep_playlist
         description: Songs from a particular playlist
-      - name: spotify_classic-hits
-        identifier: classic-hit
+      - name: spotify_classic_hits
+        identifier: classic_hit
         description: Classical music playlist
       - name: ssd_songs
         identifier: ssd_songs_with_audio_feature_clean
