@@ -60,7 +60,7 @@ sources:
         identifier: fma_echonest_ready
         description: Moar data from Spotify's API
       - name: spotify_most_streamed_2024
-        identifier: most_streamed_spotify_songs_2024_cleaned
+        identifier: most_streamed_spotify_songs_2024_temp
         description: Moar data from Spotify's API
 
 
