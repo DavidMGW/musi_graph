@@ -5,12 +5,18 @@ sources:
     tables:
       - name: spotify_artists
         identifier: spotify_artists_ready
+        description: A list of classical artists from Spotify's API
+      - name: spotify_artists_full
+        identifier: spotify_artists_full_ready
         description: A list of artists from Spotify's API
       - name: spotify_songs_features
         identifier: spotify_songs_features_ready
         description: An extended table of features per song from Spotify's API
-      - name: spotify_user_behaviour_clean
-        identifier: spotify_user_behaviour_clean
+      - name: spotify_user_behaviour
+        identifier: spotify_user_behaviour_clean_full_ready
+        description: User data from Spotify's API
+      - name: spotify_user_behaviour_filtered
+        identifier: spotify_user_behaviour_filtered_view_completed
         description: User data from Spotify's API
       - name: spotify_sleep_playlist
         identifier: spotify_sleep_playlist_ready
@@ -30,6 +36,14 @@ sources:
       - name: raw_artists
         identifier: raw_artists_ready
         description: Moar data from Spotify's API
+      - name: fma_echonest
+        identifier: fma_echonest_ready
+        description: Moar data from Spotify's API
+      - name: spotify_most_streamed_2024
+        identifier: most_streamed_spotify_songs_2024_cleaned
+        description: Moar data from Spotify's API
+
+
 
 #models:
 #    - name: staging
