@@ -1,6 +1,7 @@
 version: 2
 
 sources:
+<<<<<<< HEAD
   - name: raw
     schema: musi_graph
     tables:
@@ -18,24 +19,51 @@ sources:
             description: Number of tracks
           - name: album_type
             description: Full-length album, single, or compilation
+=======
+  - name: musi_graph_ready
+    tables:
+>>>>>>> d72baf8b6d70701b4d35eab3ba2974c35193be96
       - name: spotify_artists
-        identifier: spotify_artists
+        identifier: spotify_artists_ready
+        description: A list of classical artists from Spotify's API
+      - name: spotify_artists_full
+        identifier: spotify_artists_full_ready
         description: A list of artists from Spotify's API
       - name: spotify_songs_features
-        identifier: spotify_songs_features
+        identifier: spotify_songs_features_ready
         description: An extended table of features per song from Spotify's API
-      - name: spotify_user_behaviour_clean
-        identifier: spotify_user_behaviour_clean
+      - name: spotify_user_behaviour_full
+        identifier: spotify_user_behaviour_full_ready
+        description: User data from Spotify's API
+      - name: spotify_user_behaviour_filtered
+        identifier: spotify_user_behaviour_filtered_view_completed
         description: User data from Spotify's API
       - name: spotify_sleep_playlist
-        identifier: spotify_sleep_playlist
+        identifier: spotify_sleep_playlist_ready
         description: Songs from a particular playlist
-      - name: spotify_classic-hits
-        identifier: classic-hit
-        description: Classical music playlist
+      - name: spotify_study_playlist
+        identifier: spotify_study_music_ready
+        description: Songs from a particular playlist
+      - name: genres
+        identifier: genres_ready
+        description: A list of musical genres
       - name: ssd_songs
-        identifier: ssd_songs_with_audio_feature_clean
+        identifier: ssd_songs_with_audio_feature_clean_ready
         description: Moar data from Spotify's API
+      - name: ssd_artists
+        identifier: ssd_artists_ready
+        description: Moar data from Spotify's API
+      - name: raw_artists
+        identifier: raw_artists_ready
+        description: Moar data from Spotify's API
+      - name: fma_echonest
+        identifier: fma_echonest_ready
+        description: Moar data from Spotify's API
+      - name: spotify_most_streamed_2024
+        identifier: most_streamed_spotify_songs_2024_cleaned
+        description: Moar data from Spotify's API
+
+
 
 # models:
 #   - name: staging
