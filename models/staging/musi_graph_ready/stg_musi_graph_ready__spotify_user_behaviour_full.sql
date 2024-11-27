@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from {{ source('musi_graph_ready', 'spotify_user_behaviour') }}
+    select * from {{ source('musi_graph_ready', 'spotify_user_behaviour_full') }}
 
 ),
 
@@ -22,7 +22,13 @@ renamed as (
         music_influencial_mood,
         music_lis_frequency,
         music_expl_method,
-        music_recc_rating
+        music_recc_rating,
+        pod_lis_frequency,
+        fav_pod_genre,
+        preffered_pod_format,
+        pod_host_preference,
+        preffered_pod_duration,
+        pod_variety_satisfaction
 
     from source
 

@@ -12,8 +12,8 @@ sources:
       - name: spotify_songs_features
         identifier: spotify_songs_features_ready
         description: An extended table of features per song from Spotify's API
-      - name: spotify_user_behaviour
-        identifier: spotify_user_behaviour_clean_full_ready
+      - name: spotify_user_behaviour_full
+        identifier: spotify_user_behaviour_full_ready
         description: User data from Spotify's API
       - name: spotify_user_behaviour_filtered
         identifier: spotify_user_behaviour_filtered_view_completed
