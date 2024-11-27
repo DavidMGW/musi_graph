@@ -48,6 +48,9 @@ sources:
       - name: all_classical_genres
         identifier: all_classical_genres_ready
         description: List of classical genres
+      - name: spotify_million_songs
+        identifier: spotify_million_songs_ready
+        description: The Big F***ng Table
 
 
 # models:
