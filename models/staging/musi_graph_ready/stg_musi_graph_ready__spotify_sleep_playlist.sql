@@ -10,7 +10,6 @@ renamed as (
 
     select
         int64_field_0,
-        unnamed: 0,
         trackname,
         trackid,
         releaseyear,

@@ -62,6 +62,13 @@ sources:
       - name: spotify_most_streamed_2024
         identifier: most_streamed_spotify_songs_2024_temp
         description: Moar data from Spotify's API
+      - name: music_genres_songs_clean
+        identifier: music_genres_songs_clean_ready
+        description: List of genres
+      - name: all_classical_genres
+        identifier: all_classical_genres_ready
+        description: List of classical genres
+
 
 
 
