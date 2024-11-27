@@ -1,40 +1,34 @@
 version: 2
 
 sources:
-  - name: raw
-    schema: musi_graph
+  - name: musi_graph_ready
     tables:
-      - name: spotify_albums
-        identifier: spotify_albums
-        description: A list of albums from Spotify's API
-        columns:
-          - name: album_id
-            description: Unique identifier for each row
-          - name: album_name
-            description: Name of the album
-          - name: release_date
-            description: Release date of the album
-          - name: total_tracks
-            description: Number of tracks
-          - name: album_type
-            description: Full-length album, single or compilation
       - name: spotify_artists
-        identifier: spotify_artists
+        identifier: spotify_artists_ready
         description: A list of artists from Spotify's API
       - name: spotify_songs_features
-        identifier: spotify_songs_features
+        identifier: spotify_songs_features_ready
         description: An extended table of features per song from Spotify's API
       - name: spotify_user_behaviour_clean
         identifier: spotify_user_behaviour_clean
         description: User data from Spotify's API
       - name: spotify_sleep_playlist
-        identifier: spotify_sleep_playlist
+        identifier: spotify_sleep_playlist_ready
         description: Songs from a particular playlist
-      - name: spotify_classic_hits
-        identifier: classic_hit
-        description: Classical music playlist
+      - name: spotify_study_playlist
+        identifier: spotify_study_music_ready
+        description: Songs from a particular playlist
+      - name: genres
+        identifier: genres_ready
+        description: A list of musical genres
       - name: ssd_songs
-        identifier: ssd_songs_with_audio_feature_clean
+        identifier: ssd_songs_with_audio_feature_clean_ready
+        description: Moar data from Spotify's API
+      - name: ssd_artists
+        identifier: ssd_artists_ready
+        description: Moar data from Spotify's API
+      - name: raw_artists
+        identifier: raw_artists_ready
         description: Moar data from Spotify's API
 
 #models:
