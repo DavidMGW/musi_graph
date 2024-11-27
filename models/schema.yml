@@ -45,6 +45,10 @@ sources:
       - name: music_genres_songs_clean
         identifier: music_genres_songs_clean_ready
         description: List of genres
+      - name: all_classical_genres
+        identifier: all_classical_genres_ready
+        description: List of classical genres
+
 
 
 
