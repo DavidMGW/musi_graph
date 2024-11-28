@@ -9,7 +9,7 @@ source as (
 renamed as (
 
     select
-        age,
+        replace (age,"6-12","06-12") as age, 
         gender,
         spotify_usage_period,
         spotify_listening_device,
