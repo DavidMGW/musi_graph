@@ -1,28 +1,8 @@
 version: 2
 
 sources:
-<<<<<<< HEAD
-  - name: raw
-    schema: musi_graph
-    tables:
-      - name: spotify_albums
-        identifier: spotify_albums
-        description: A list of albums from Spotify's API
-        columns:
-          - name: album_id
-            description: Unique identifier for each row
-          - name: album_name
-            description: Name of the album
-          - name: release_date
-            description: Release date of the album
-          - name: total_tracks
-            description: Number of tracks
-          - name: album_type
-            description: Full-length album, single, or compilation
-=======
   - name: musi_graph_ready
     tables:
->>>>>>> d72baf8b6d70701b4d35eab3ba2974c35193be96
       - name: spotify_artists
         identifier: spotify_artists_ready
         description: A list of classical artists from Spotify's API
@@ -68,8 +48,9 @@ sources:
       - name: all_classical_genres
         identifier: all_classical_genres_ready
         description: List of classical genres
-
-
+      - name: spotify_million_songs
+        identifier: spotify_million_songs_ready
+        description: The Big F***ng Table
 
 
 # models:
