@@ -34,4 +34,11 @@ renamed as (
 
 )
 
-select * from renamed
+select *,
+CASE 
+WHEN age LIKE '6-12' THEN 1 
+WHEN age LIKE '12-20' THEN 2
+WHEN age LIKE '20-35' THEN 3
+WHEN age LIKE '35-60' THEN 4
+END AS age_group
+from renamed
