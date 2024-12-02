@@ -51,6 +51,10 @@ sources:
       - name: spotify_million_songs
         identifier: spotify_million_songs_ready
         description: The Big F***ng Table
+      - name: final_playlists
+        description: A list of Spotify playlists
+      - name: final_playlists_tracks
+        description: A list of tracks added to Spotify playlists
 
 
 # models:
